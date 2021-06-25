@@ -40,8 +40,8 @@ def back_prop(Theta1,Theta2,z1,z2,a1,h,y):
 
     return del2,del1,der_Theta1,der_Theta2
 
-#z1,a1,z2,h=for_prop(Theta1,Theta2,X)
-#back_prop(Theta1,Theta2,z1,z2,a1,h,y)
+z1,a1,z2,h=for_prop(Theta1,Theta2,X)
+back_prop(Theta1,Theta2,z1,z2,a1,h,y)
 
 for i in range(10000):
     z1, a1, z2, h = for_prop(Theta1, Theta2, X)
