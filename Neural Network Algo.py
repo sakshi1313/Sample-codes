@@ -3,13 +3,13 @@ import numpy as np
 X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]]) #inputs
 y=np.array([0,1,1,0]) #output
 y=y.reshape(4,1)
-#print(X.shape) 2X4
+#print(X.shape) 4x2
 
 m=X.shape[0]
 #print(m)
 #no. of inputs=2
 #no. of neurons in hidden layer=2
-alpha=0.1
+alpha=0.1 #learning rate
 np.random.seed(1)
 
 Theta1=np.random.rand(2,2) #2x2
