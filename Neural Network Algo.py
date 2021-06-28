@@ -67,7 +67,7 @@ for i in h:
     else:
         predict.append(0)
 print("Output result:")
-print(predict) # same as 'y'
+print(predict) # same as labels in 'y'
 
 
 
