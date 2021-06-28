@@ -59,15 +59,15 @@ for i in range(10000):
 
 np.set_printoptions(suppress=True)
 print("Predicted values:")
-print(h.T)
+print(h.T) # 'h' is the predicted output
 predict=[]
 for i in h:
     if i>0.5:
         predict.append(1)
     else:
         predict.append(0)
-print("After rounding off:")
-print(predict)
+print("Output result:")
+print(predict) # same as 'y'
 
 
 
