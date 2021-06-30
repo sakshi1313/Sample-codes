@@ -14,8 +14,8 @@ bias1=0.2
 bias2=0.2
 np.random.seed(1)
 
-Theta1=2*np.random.rand(2,2) -1 #2x2
-Theta2=2*np.random.rand(1,2) -1 #1x2
+Theta1=np.random.randn(2,2)  #2x2
+Theta2=np.random.randn(1,2)  #1x2
 
 def sigmoid(x):
     return 1/(1+np.exp(-x))
