@@ -38,8 +38,8 @@ def back_prop(Theta1,Theta2,z1,z2,a1,h,y):
 
     der_Theta2=np.dot(del2.T,a1)/m #1X2
     der_Theta1=np.dot(del1.T,X)/m#2x2
-    der_bias1=np.sum(del2)/m
-    der_bias2=(np.sum(del2))/m
+    der_bias2=np.sum(del2)/m
+    der_bias1=(np.sum(del1))/m
 
 
 
