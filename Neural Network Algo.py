@@ -40,13 +40,7 @@ def back_prop(Theta1,Theta2,z1,z2,a1,h,y):
     der_Theta1=np.dot(del1.T,X)/m#2x2
     der_bias2=np.sum(del2)/m
     der_bias1=(np.sum(del1))/m
-
-
-
     return del2,del1,der_Theta1,der_Theta2,der_bias1,der_bias2
-
-#z1,a1,z2,h=for_prop(Theta1,Theta2,X)
-#back_prop(Theta1,Theta2,z1,z2,a1,h,y)
 
 for i in range(10000):
     z1, a1, z2, h = for_prop(Theta1, Theta2, X)
