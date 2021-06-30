@@ -9,9 +9,9 @@ m=X.shape[0]
 #print(m)
 #no. of inputs=2
 #no. of neurons in hidden layer=2
-alpha=0.05
-bias1=0.2
-bias2=0.2
+alpha=0.1
+bias1=0.3
+bias2=0.3
 np.random.seed(1)
 
 Theta1=np.random.randn(2,2)  #2x2
